@@ -1,0 +1,9 @@
+#movies {
+    position: relative;
+}
+
+#movies h2 {
+    color: #24252A;
+    border-bottom: 1px solid #aaaaaa;
+}
+

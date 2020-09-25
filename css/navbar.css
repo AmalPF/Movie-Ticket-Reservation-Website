@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+header li, a, button {
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	color: #edf0f1;
+	text-decoration: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 20px 20px;
+	background-color: #24252A;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+header .logo {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	margin-right: auto;
+	height: 50px;
+}
+
+header .nav-links {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header .nav-links li {
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+header .nav-links li a {
+	transition: all 0.3s ease 0s;
+}
+
+header .nav-links li a:hover {
+	color: #0088a9;
+	text-decoration: none;
+}
+
+header button {
+	padding: 9px 25px;
+	background-color: rgba(0,136,169,1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+	background-color: rgba(0,136,169,0.8);
+}
+
+header .hamburger {
+	display: none;
+  }
+
+
+
+@media screen and (max-width: 700px) {
+	header .logo {
+		height: 40px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	header nav a 
+		{display: none;}
+	header .logo {
+		height: 40px;
+	}
+	header a.hamburger {
+		display: inline;
+		justify-content: flex-end;
+	}
+  }
+  
+@media screen and (max-width: 600px) {
+	header .responsive {
+		display: block;
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		top: 90px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		align-items: center;
+		align-self: center;
+		align-content: center;
+	}
+	header .responsive ul li {
+		width: 100%;
+		border-bottom: 1px solid #ddd;
+		padding: 5px 5px;
+		background-color: #24252A;
+	}
+	header .responsive ul li a, button {
+		font-size: 24px;
+		display: block;
+		margin: 10px 10px;
+	}
+	header .responsive .hamburger {
+		display: block;
+		justify-content: flex-end;
+	}
+	header .responsive a {
+	  	float: none;
+	  	display: block;
+	  	text-align: left;
+	}
+}

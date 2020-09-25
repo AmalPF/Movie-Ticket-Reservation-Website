@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Reservation</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- font awesome linked -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <!-- external css linked -->
+    <link rel="stylesheet" href="css/main_style.css">
+
+</head>
+<body class="bg-dark">
+
+    <header>
+        <img class="logo" src="img/logo.png" alt="Logo">
+        <!--<div class="topnav" id="Topnav">-->
+		    <nav id="navigationBar">
+			    <ul class="nav-links">
+				    <li>
+					    <a href="#">Movies</a>
+				    </li>
+				    <li>
+					    <a href="#">Tickets</a>
+				    </li>
+				    <li>
+					    <a href="#">About</a>
+                    </li>
+                    <li>
+					    <a href="#" class="cta"><button>Login</button></a>
+				    </li>
+                </ul>
+		    </nav>
+        <!--</div>-->
+        <a href="#" class="hamburger" onclick="navbar()">
+            <i id="ham" class="fa fa-bars" style="font-size: 50px;"></i>
+            <i id="cross" class="fa fa-times" style="display: none; font-size: 50px;" aria-hidden="true"></i>
+        </a>
+    </header>
+    
+    <section id="home" class="container-fluid pt-4">
+        <h2><b>Home</b></h2>
+    </section>
+
+    <section id="movies" class="container-fluid pt-4">
+        <h2><b>Latest Movies</b></h2>
+        <div id="slider-container">
+            <!-- slider--------------->
+            <ul id="autoWidth" class="cs-hidden">
+                <!-- 1 -->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <p class="marvel">MARVEL</p>
+    
+                        <!-- mocel -->
+                        <img src="img/marvel/Ant-Man.png" class="model">
+    
+                        <!-- details -->
+                        <div class="details">
+                            <!-- logo character -->
+                            <img src="img/marvel/AntMan-logo.png" class="logo">
+    
+                            <!-- character details -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </li>
+    
+                <!-- 2 -->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <p class="marvel">MARVEL</p>
+    
+                        <!-- mocel -->
+                        <img src="img/marvel/DeadPool.png" class="model">
+    
+                        <!-- details -->
+                        <div class="details">
+                            <!-- logo character -->
+                            <img src="img/marvel/DeadPool-logo.png" class="logo">
+    
+                            <!-- character details -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </li>
+    
+                <!-- 3 -->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <p class="marvel">MARVEL</p>
+    
+                        <!-- mocel -->
+                        <img src="img/marvel/SpiderMan.png" class="model">
+    
+                        <!-- details -->
+                        <div class="details">
+                            <!-- logo character -->
+                            <img src="img/marvel/SpiderMan-logo.png" class="logo">
+    
+                            <!-- character details -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </li>
+    
+                <!-- 4 -->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <p class="marvel">MARVEL</p>
+    
+                        <!-- mocel -->
+                        <img src="img/marvel/Venom.png" class="model">
+    
+                        <!-- details -->
+                        <div class="details">
+                            <!-- logo character -->
+                            <img src="img/marvel/Venom-logo.png" class="logo">
+    
+                            <!-- character details -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </li>
+    
+                <!-- 5 -->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <p class="marvel">MARVEL</p>
+    
+                        <!-- mocel -->
+                        <img src="img/marvel/Thor.png" class="model">
+    
+                        <!-- details -->
+                        <div class="details">
+                            <!-- logo character -->
+                            <img src="img/marvel/Thor-logo.png" class="logo">
+    
+                            <!-- character details -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </li>
+    
+                <!-- 6 -->
+                <li class="item-a">
+                    <!-- slider-box -->
+                    <div class="box">
+                        <p class="marvel">MARVEL</p>
+    
+                        <!-- mocel -->
+                        <img src="img/marvel/IronMan.png" class="model">
+    
+                        <!-- details -->
+                        <div class="details">
+                            <!-- logo character -->
+                            <img src="img/marvel/IronMan-logo.png" class="logo">
+    
+                            <!-- character details -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+    
+        </div>
+    </section>
+
+    <section id="booking" class="container-fluid">
+        <div><center>
+            <div class="screen"></div>
+            <!--<i class='fas fa-couch' style='font-size:36px; width: 10px;'></i>
+            <img class="seat" src="img/seat.svg" alt="seat">-->
+            <div id="row1" style="display: inline-block; margin: 2px 20px;"></div>
+            <div id="row2" style="display: inline-block; margin: 2px 20px"></div>
+            <br>
+            <div id="row3" style="display: inline-block; margin: 2px 20px;"></div>
+            <div id="row4" style="display: inline-block; margin: 2px 20px"></div>
+            <br>
+            <div id="row5" style="display: inline-block; margin: 2px 20px;"></div>
+            <div id="row6" style="display: inline-block; margin: 2px 20px"></div></center>
+        </div>
+    </section>
+
+    <section id="about" class="container-fluid">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+    
+
+
+
+
+
+
+    <footer>
+
+    </footer>
+    
+
+    
+
+    <!-- js for bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- JQuery and JS for slider -->
+	<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+    <script type="text/javascript" src="js/lightslider.js"></script>
+    <script type="text/javascript" src="js/responsive_slider.js"></script>
+    
+    <script src="js/index.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/booking.js"></script>
+    <script>
+        imgloop("row1");
+        imgloop("row2");
+        imgloop("row3");
+        imgloop("row4");
+        imgloop("row5");
+        imgloop("row6");
+    </script>
+
+</body>
+</html>

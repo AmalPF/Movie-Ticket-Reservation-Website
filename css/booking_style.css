@@ -1,0 +1,21 @@
+#booking {
+    background-color: #fff;
+    position: relative;
+    padding-top: 50px;
+}
+
+#booking .screen {
+    margin-top: 0;
+    margin-bottom: 50px;
+    border: 2px solid grey;
+}
+
+#booking .seat {
+    height: 30px;
+    margin: 0;
+    color: blue;
+}
+
+#booking button {
+    color: black;
+}
